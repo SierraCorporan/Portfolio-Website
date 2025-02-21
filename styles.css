@@ -8,8 +8,7 @@ img, video{
   max-width: 100%;
 }
 
-/* starting my grid layout */
-
+/* index page grid layout*/
 
 .grid{
     display: grid;
@@ -45,6 +44,163 @@ img, video{
     }
   }
 
+
+  /* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Header and Navigation Styles for Index */
+header {
+  background-color: #111;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #adc5bf;
+}
+
+.logo {
+  margin-left: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Hero Section Styles for index page */
+.hero {
+  background: image-set(url("images/jr-korpa-_ZNLoTRTEKs-unsplash.jpg"));
+  background-size: contain;
+  width: 100%;
+  height: 600px; 
+  margin-top: auto;
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  color: white;
+}
+
+.hero-content {
+  margin-top: 70px;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Index Body Text*/
+
+.indextext{
+  padding-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 90%; 
+  height: 70%; 
+}
+
+.content {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px;
+}
+
+.image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px; /* rounds the corners of the image */
+}
+
+.text {
+  max-width: 600px; /*limit the width of the text */
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.button{
+  background-color: #719e9e;
+  color: white; 
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+.button:hover{
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+/*all cards styling*/
 
    .card {
     width: 500px;
@@ -94,29 +250,6 @@ img, video{
     color: #555;
 }
 
-
-
-   .topnav {
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
-  }
-  
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
 .heading{
   text-align: left;
   font-size: 30px;
@@ -125,12 +258,13 @@ img, video{
 }
 
   
-  
+/*illustration grid*/  
 
 .illustrationgrid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-   grid-gap: 30px;
+  grid-gap: 30px;
+  margin-left:70px;
 }
 
 @media (min-width: 600px){
@@ -150,37 +284,82 @@ img, video{
     grid-template-columns: repeat(3,1fr);
   }
 }
+ /*illustration page text*/
 
-.illustrationgrid p{
-  font-size: 18px;
-  text-align: left;
-}
-
-.illustrationtext{
-  padding-top: 30%;
-}
-
-.illustrationtext header{
+.illustrationtext .heading{
   font-size: 25px;
-  font-family: impact;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 .illustrationgrid .card-text{
-text-align: left;
+text-align: center;
 padding-left: 20px;
 padding-top: 100px;
+padding-right: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+/*illustration page button*/
+
+.illustrationbutton .a {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px; /* Text size */
+  padding: 12px 24px; /* Padding for top/bottom and left/right */
+  border: none; /* No border */
 }
 
-.aboutgrid{
+/*Still Life 1*/
+
+.stilllife1text {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: x-large;
+ text-align: center;
+ margin-right: 300px;
+ margin-left: 300px;
+}
+
+
+/*about me page grid */
+
+
+.aboutgrid .body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.aboutgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-   grid-row-gap: 10px;
-   max-width:900px;
-   margin: auto;
+  grid-template-columns: 1fr, 1fr;
+  gap: 50px;
+  max-width: 1500px;
+  margin: 20px;
+}
+.aboutmebox00 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.aboutmetext{
+.aboutmebox0, .aboutmebox1, .aboutmebox2, .aboutmebox3, .aboutmebox4, 
+        .aboutmebox5, .aboutmebox6, .aboutmebox7, .aboutmebox8, .aboutmebox9, .aboutmebox10 {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        } 
+
+.aboutgrid .h1 {
+  color: #333;
+}
+.aboutgrid .li {
   text-align: left;
+  margin: 8px 0;
 }
 
 @media (min-width: 600px){
@@ -200,6 +379,9 @@ padding-top: 100px;
     grid-template-columns: repeat(2,1fr);
   }
 }
+
+
+/*projectsgrid*/
 
 .projectsgrid{
   display: grid;
@@ -232,7 +414,7 @@ padding-top: 100px;
   }
 }
 
-
+/*project pages header styling*/
 
 .project1grid header{
 font-size: 40px;
@@ -258,13 +440,9 @@ font-family: impact;
       font-family: impact;
       }
 
+  /*project page 1 styling*/
 
 .persona-card{
 width:300px;
 height:100px;
 }
-
-.header {
-  background-image: url('images/Untitled\ -\ Copy.png'); 
-  background-position: center;
-  height: 70vh;}
