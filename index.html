@@ -2,70 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sierra's Portfolio Website showcasing illustrations, projects, and more.">
-    <title>Sierra's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/fav.ico" type="image/png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sierra's Portfolio showcasing creative arts, illustrations, and designs.">
+  <title>Sierra's Creative Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/fav.ico" type="image/png" sizes="32x32">
 </head>
 
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <nav class="topnav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="illustration.html" class="nav-link">Illustration</a>
-            <a href="about.html" class="nav-link">About</a>
-        </nav>
-        <div class="hero">
-            <h1 class="hero-title">Sierra's Portfolio</h1>
-            <p class="hero-subtitle">A collection of my creative works and projects</p>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="illustration.html">Illustration</a>
+        <a href="about.html">About</a>
+      </div>
+
+  <!-- Header Section -->
+  <header class="hero">
+   
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to My Creative Universe</h1>
+      <p class="hero-description">Where imagination meets the canvas</p>
+      <a href="#projects" class="cta-button">Dive In</a>
+    </div>
+  </header>
+
+  <!-- Artistic About Section -->
+  <section class="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>I'm Sierra, an artist who paints with pixels and imagination. My work reflects a love for storytelling through
+        color and form. Explore my universe of bold, dynamic, and visually captivating art.</p>
+    </div>
+    <div class="about-image">
+      <img src="images/portrait.jpg" alt="Sierra's portrait" class="about-img">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Featured Works</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="images/Group 46.png" alt="Artwork 1" class="project-img">
+        <div class="project-description">
+          <h3>Urban Dreams</h3>
+          <p>Exploring the contrasts between nature and urbanization through vibrant street art.</p>
         </div>
-    </header>
+      </div>
+      <div class="project-item">
+        <img src="images/flowerart.png" alt="Artwork 2" class="project-img">
+        <div class="project-description">
+          <h3>Whispers of the Past</h3>
+          <p>A digital journey into forgotten stories, brought to life through surreal illustration.</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="images/Group 19.png" alt="Artwork 3" class="project-img">
+        <div class="project-description">
+          <h3>Abstract Horizon</h3>
+          <p>Vivid abstract art that reflects the shifting boundaries of the human experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
 
-    <!-- Main Content Section -->
-    <main>
-        <section class="intro">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Explore my illustrations, projects, and more to learn about my work and creative journey.</p>
-        </section>
-
-        <!-- Portfolio Cards Section -->
-        <section class="portfolio">
-            <article class="indexcard">
-                <a href="illustration.html" class="indexcard-link">
-                    <div class="indexcard-image">
-                        <img src="images/Group 15.png" alt="Illustration work showcasing various styles">
-                    </div>
-                    <div class="indexcard-content">
-                        <h3 class="indexcard-title">Illustration</h3>
-                        <p class="indexcard-description">Explore my diverse illustration works, including digital and hand-drawn pieces.</p>
-                    </div>
-                </a>
-            </article>
-
-            <article class="indexcard">
-                <a href="about.html" class="indexcard-link">
-                    <div class="indexcard-image">
-                        <img src="images/Group 18.png" alt="A portrait or about section image of the artist">
-                    </div>
-                    <div class="indexcard-content">
-                        <h3 class="indexcard-title">About Me</h3>
-                        <p class="indexcard-description">Learn more about me, my background, and the creative process behind my work.</p>
-                    </div>
-                </a>
-            </article>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Sierra | All Rights Reserved</p>
-    </footer>
-
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Sierra | All Rights Reserved</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sierra-corporan-848387286/" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
-
