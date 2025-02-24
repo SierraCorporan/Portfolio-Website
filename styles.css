@@ -40,7 +40,16 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 10;}
+
+.navbar a{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 3rem;
 }
 
 .nav-link {
@@ -95,10 +104,26 @@ body {
 /* About Section Styling */
 .about {
   display: flex;
-  justify-content: space-between;
   padding: 5rem 10%;
   background-color: #fff;
   border-bottom: 2px solid #ddd;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center; 
+}
+
+.about h2 {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.about p {
+  font: arial;
 }
 
 .about-content {
@@ -106,9 +131,11 @@ body {
 }
 
 .about-content h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: #333;
+  max-width: 800px; 
+  padding: 20px;
 }
 
 .about-content p {
@@ -117,15 +144,6 @@ body {
   line-height: 1.8;
 }
 
-.about-image {
-  width: 40%;
-}
-
-.about-img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
 
 /* Projects Section Styling */
 .projects {
@@ -134,8 +152,25 @@ body {
   text-align: center;
 }
 
-.section-title {
+.projects h3{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+.projects h2{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 3px;
   font-size: 3rem;
+}
+
+.section-title {
   margin-bottom: 3rem;
 }
 
@@ -150,8 +185,8 @@ body {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+
 }
 
 .project-item:hover {
@@ -160,7 +195,7 @@ body {
 
 .project-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: opacity 0.3s ease;
 }
 
@@ -174,14 +209,53 @@ body {
   text-align: left;
 }
 
-.project-description h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
 
 .project-description p {
   font-size: 1rem;
+}
+
+/* endsection*/
+
+.program {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center; 
+}
+
+.program-content {
+  max-width: 800px; 
+  padding: 20px;
+}
+
+.program h2 {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 3rem;
+}
+
+.program p{
+  font: arial;
+}
+
+.cta-button {
+  padding: 1rem 3rem;
+  background-color: #6796a5;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
 }
 
 /* Footer Section Styling */
@@ -238,12 +312,25 @@ body {
   }
 }
 
-/* Portfolio Section (Card Grid Layout) */
+/* Portfolio Section */
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 30px;
   margin-top: 40px;
+}
+
+.illustrationheading h1{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 3rem;
+}
+
+.illustrationgrid p {
+font: arial;
 }
 
 .indexcard {
@@ -262,7 +349,7 @@ body {
 
 .indexcard-image img {
   width: 100%;
-  height: 230px; /* Adjusted height for better fit */
+  height: 230px;
   object-fit: cover;
 }
 
@@ -288,17 +375,10 @@ footer {
   background-color: #333;
   color }
 
-/* Grid Layout for Illustrations */
-
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Illustrations Page */
 
 .illustrationbox13 {
-  grid-column: span 2; 
+  grid-column: span 2;
 }
 
 
@@ -314,7 +394,6 @@ a {
   color: inherit;
 }
 
-/* Header Styles */
 header  {
   text-align: center;
   font-size: 2rem;
@@ -365,14 +444,14 @@ text-align: center;
   position: relative;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;  /* Ensure card stretches vertically */
+  height: 100%; 
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
 
-/* Card Image */
+
 .card-image {
   flex-grow: 1;
   width: 100%;
@@ -381,10 +460,10 @@ text-align: center;
 
 .card-image img {
   width: 100%;
-  height: 100%;  /* Make sure the image covers the available space */
+  height: 100%; 
   object-fit: fill; }
 
-/* Card Text - Initially hidden */
+
 .card-text {
   position: absolute;
   top: 0;
@@ -408,7 +487,7 @@ text-align: center;
   visibility: visible;
 }
 
-/* Card Title and Description */
+
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -438,6 +517,8 @@ text-align: center;
   }
 }
 
+/* Footer Styles */
+
 footer {
   text-align: center;
   background-color: #333;
@@ -449,7 +530,7 @@ footer {
 }
 
 /*aboutmepage*/
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -504,6 +585,35 @@ header nav {
   max-width: 1200px;
 }
 
+.about-grid h2{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 4rem;}
+
+.about-grid h4{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.about-grid p {
+ font:arial;}
+
+.headerp p{
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  font-size: 4rem;
+}
+
+
 .about-profile img {
   width: 200px;
   height: auto;
@@ -536,16 +646,15 @@ em {
   color: #666;
 }
 
-/* Education & Experience Flexbox (Side by Side) */
 .education-experience {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap; /* Allow flex items to wrap if needed */
+  flex-wrap: wrap; 
 }
 
 .about-education, .about-experience {
   flex: 1;
-  min-width: 280px; /* Ensures the boxes don't get too small */
+  min-width: 280px; 
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -596,7 +705,12 @@ em {
   padding-right: 100px;
 }
 
-/* Footer */
+.aboutmep {
+  color: #555;
+  font-weight: lighter;
+}
+
+/* Footer styles */
 footer {
   background-color: #333;
   color: #fff;
