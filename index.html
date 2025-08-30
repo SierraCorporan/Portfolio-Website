@@ -1,45 +1,97 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sierra's Portfolio showcasing creative arts, illustrations, and designs.">
+  <title>Sierra's Creative Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/fav.ico" type="image/png" sizes="32x32">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <h1>Site Title</h1>
-          <ul>
-            <li>nav Item 1</li>
-            <li>nav Item 2</li>
-            <li>nav Item 3</li>
-          </ul>
-        </nav>
-      </header>
-      
-      <main>
-        <!-- your page content here... -->
-      </main>
-      
-      <footer>
-        <!-- your site footer content here... -->
-      </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+<header>
+  <nav>
+      <nav class="navbar">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="illustration.html" class="nav-link">Illustration</a>
+          <a href="about.html" class="nav-link">About</a>
+      </nav>
+  </nav>
+</header>
+
+  <!-- Header Section -->
+  <header class="hero">
+   
+    <div class="hero-content">
+      <h1 class="hero-title">Welcome to My Portfolio</h1>
+      <p class="hero-description">Designing the Future through Technology & Art</p>
+      <a href="illustration.html" class="cta-button">Dive In</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-content">
+     <h2>About Me</h2>
+      <p>Creative professional with practical experience in web design, development, illustration, and graphic design. Passionate about crafting intuitive web interfaces, bringing designs to life, and creating impactful visuals that communicate effectively. Eager to contribute to innovative projects in the arts and technology fields while continuing to learn and grow.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Featured Works</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="images/Group 46.png" alt="Youth Illustration" class="project-img">
+        <div class="project-description">
+          <h3>Youth</h3>
+          <p>Dive deep into my portfolio to discover my process and finalized work</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="images/Group 26 (1).png" alt="Cloud Strife Fanart Illustration" class="project-img">
+        <div class="project-description">
+          <h3>Cloud Strife</h3>
+          <p>A digital journey into forgotten stories, brought to life through surreal illustration.</p>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="images/flowerart.png" alt="Longevity Illustration" class="project-img">
+        <div class="project-description">
+          <h3>Abstract Horizon</h3>
+          <p>Vivid abstract art that reflects the shifting boundaries of the human experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+
+ <!-- Program Section -->
+<section class="program">
+  <div class="program-content">
+    <h2>About this Website</h2>
+    <p>This website was completely curated by myself using HTML and CSS. It is my first and only proffesional portfolio website that demonstrates my capabilities and showcases what I do best. I've created this website through Github and Visual Studio Code. To see my code please click below. </p>
+    <br>
+    <a href="https://github.com/SierraCorporan/Portfolio-Website" class="cta-button">My Code</a>
+  </div>
+</section>
+<br>
+<br>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Sierra's Portfolio. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sierra-corporan-848387286/" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
