@@ -790,8 +790,10 @@ margin-right: 15%;
 
 .big-projects h2,
 .small-designs h2 {
-    font-size: 2rem;
+   font-family: "Bebas Neue", serif;
+    font-size: 3rem;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 
@@ -851,6 +853,27 @@ margin-right: 15%;
     height: auto;
 }
 
+.descriptionp p{
+  text-align:center ;
+}
+
+.descriptionp2 {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.descriptionp2 h2 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.descriptionp2 p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
 
 /*BMCCLUBS CSS PAGE*/
 .text-containerhfp { flex: 1;
