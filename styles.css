@@ -187,12 +187,12 @@ body {
 }
 
 .project-item {
-  position: relative;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 11px solid #000000;
 }
 
 .project-item:hover {
