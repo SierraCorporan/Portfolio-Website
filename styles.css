@@ -822,3 +822,105 @@ margin-right: 15%;
     line-height: 1.8;
     color: #555;
 }
+
+
+/*empowered journey multimedia page css */
+
+.empoweredjourney {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.empoweredjourneyimg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.empoweredjourneyimg img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin-left: ;
+}
+
+.empoweredjourney-text {
+    flex: 1.5;
+}
+
+
+/*empowered journey html page css */
+
+
+.shareyourstory-section,
+.interview-section,
+.visualstyle-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+
+/* First section: Image left, text right */
+.shareyourstory-section {
+    flex-direction: row;
+}
+
+
+/* Second section: Image right, text left */
+.interview-section {
+    flex-direction: row-reverse;
+}
+
+
+/* Third section: Image left, text right */
+.visualstyle-section {
+    flex-direction: row;
+}
+
+
+.shareyourstory-image,
+.interview-image,
+.visual-style-image {
+    flex: 1;
+}
+
+
+.shareyourstory-image img,
+.interview-image img,
+.visual-style-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+.shareyourstory-content,
+.interview-content,
+.visual-style-content {
+    flex: 1;
+}
+
+
+.shareyourstory-content h2,
+.interview-content h2,
+.visual-style-content h2 {
+    margin-bottom: 15px;
+}
+
+
+.shareyourstory-content p,
+.interview-content p,
+.visual-style-content p {
+    line-height: 1.8;
+}
+
+.empoweredjourneydebrief
+{ text-align: center;
+margin-left: 15%;
+margin-right: 15%;}
