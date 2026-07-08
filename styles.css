@@ -701,7 +701,7 @@ footer {
   }
 }
 
-
+/*MULTIMEDIA PAGE CSS*/
 
 .project-section {
     display: flex;
@@ -780,6 +780,79 @@ margin-right: 15%;
     transform: translateY(-3px);
 }
 
+
+.big-projects,
+.small-designs {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+
+.big-projects h2,
+.small-designs h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+.small-designs p,
+.big-projects p {
+    line-height: 1.8;
+}
+
+.small-designs {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.small-designs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.small-designs p {
+    max-width: 700px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+
+.design-grid {
+    width: 100%;
+}
+
+.clairvoyageimg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.clairvoyageimg img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.clairvoyageimg img:last-child {
+    grid-column: span 2;
+}
+
+.clairvoyage-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.clairvoyage-content img {
+    width: 500px;
+    height: auto;
+}
+
+
+/*BMCCLUBS CSS PAGE*/
 .text-containerhfp { flex: 1;
     padding: 10px;
     margin-top: 25%;
@@ -822,6 +895,7 @@ margin-right: 15%;
     line-height: 1.8;
     color: #555;
 }
+
 
 
 /*empowered journey multimedia page css */
